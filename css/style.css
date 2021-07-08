@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.cards-container {
+  margin: auto;
+  display: flex;
+  width: 65vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.card-prev {
+  padding: 4rem 3rem;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+.card-prev__heading {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  padding: 2rem 0rem;
+  font-size: 3rem;
+}
+.card-prev__text {
+  padding: 0rem 0rem 8rem 0rem;
+  line-height: 1.8em;
+}
+.card-prev--Sedans {
+  background-color: #e38826;
+  border: transparent;
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+.card-prev--SUVs {
+  background-color: #006970;
+}
+.card-prev--Luxury {
+  background-color: #004241;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.card-prev__button {
+  text-decoration: none;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
