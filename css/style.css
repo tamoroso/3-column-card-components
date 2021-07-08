@@ -14,13 +14,13 @@
 .cards-container {
   margin: auto;
   display: flex;
-  width: 65vw;
+  width: 70vw;
   height: 100vh;
   align-items: center;
 }
 
 .card-prev {
-  padding: 4rem 3rem;
+  padding: 4rem 4rem;
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
   color: rgba(255, 255, 255, 0.75);
