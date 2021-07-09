@@ -1,4 +1,4 @@
-@import 'colors', 'fonts', 'typography';
+@import 'colors', 'fonts', 'typography','mixins','responsive_mixins';
 
 *{
     margin: 0;
@@ -7,22 +7,31 @@
 }
 
 .body{
-    width:100vw;
-    height: 100vh;
+    width:100%;
+    height: 100%;
     background-color: $background-color;
 }
 
 
 .cards-container{
-    margin : auto;
+    margin : 16vh auto;
     display: flex;
-    width : 70vw;
-    height: 100vh;
+    width : 65vw;
     align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    @include mobile-only{
+        flex-direction: column;
+        margin: 10vh auto;
+    }
+    @include intermediate-media{
+        width: 80vw;
+    }
 }
 
 .card-prev{
-    padding: 4rem 4rem;
+    padding: 3rem 3rem 4rem 3rem;
     font-size: $body-font-size;
     font-family: $body-font;
     color: $text-color;
@@ -31,30 +40,19 @@
         font-family: $title-font;
         text-transform: uppercase;
         padding: 2rem 0rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     &__text{
-        padding : 0rem 0rem 8rem 0rem;
         line-height: 1.8em;
+        padding-bottom: 6.5rem ;
     }
-    &--Sedans{
-        background-color: $sedans-color;
-        border: transparent;
-        border-radius : 1rem 0rem 0rem 1rem
-    }
-    &--SUVs{
-        background-color: $suvs-color;
-    }
-    &--Luxury{
-        background-color: $luxury-color;
-        border-radius : 0rem 1rem 1rem 0rem
-
-    }
+    @include card-layout-palette($card-layout-palette);
     &__button{
         text-decoration: none;
         color: $background-color;
         border: 2px solid $background-color;
         border-radius: 2rem ;
-        padding: 1rem 2rem;
+        padding: 0.8rem 2rem;
+        @include button-text-color($card-layout-palette);
     }
 }

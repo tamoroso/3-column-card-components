@@ -4,3 +4,17 @@ $suvs-color : hsl(184,100%,22%);
 $luxury-color : hsl(179,100%,13%);
 $background-color : hsl(0,0%,95%);
 $text-color : hsl(0,0%, 100%, 0.75);
+
+// Cards color and layout palette 
+
+$card-layout-palette:(
+    Sedans:(
+        bg:$sedans-color,
+    ),
+    SUVs:(
+        bg:$suvs-color,
+    ),
+    Luxury:(
+        bg:$luxury-color,
+    )
+)

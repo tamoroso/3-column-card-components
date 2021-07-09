@@ -1,0 +1,18 @@
+@import 'colors';
+
+@mixin card-layout-palette($palettes){
+    @each $vehicule, $palette in $palettes{
+        &--#{$vehicule}{
+            background-color: map-get($palette, bg);
+        }
+    }
+}
+
+@mixin button-text-color($palettes){
+    @each $vehicule, $palette in $palettes{
+        &--#{$vehicule}:hover{
+            background-color: $background-color;
+            color: map-get($palette, bg);
+        }
+    }
+}

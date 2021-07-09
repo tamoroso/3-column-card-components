@@ -1,0 +1,16 @@
+$breakpoints:(
+    intermediate:1240px,
+    mobile:943px,
+);
+
+@mixin mobile-only{
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        @content;
+    }
+}
+
+@mixin intermediate-media{
+    @media screen and (max-width: map-get($breakpoints, intermediate )){
+        @content;
+    }
+}
